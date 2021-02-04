@@ -1,0 +1,60 @@
+body {
+    background-color: #dfd9eb;
+}
+
+main {
+    text-align: center;
+}
+
+h1 {
+    display: inline-block;
+    font-family:'Hachi Maru Pop', cursive;
+    color:black;
+    text-shadow: 1px 2px 2px #FFFFFF;
+    letter-spacing: 1.5px;
+    margin: 20px;
+    border-top: solid #070707;
+    border-bottom: solid #070707;
+    padding: 10px;
+}
+
+.btn {
+    background-color: rgb(243, 150, 243);
+    color: #000000;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#shapeBoard {
+    position: relative;
+    margin: 15px;
+    min-width: 600px;
+    min-height: 600px;
+    background-color: #413e40;
+    box-shadow: -4px 5px 8px -3px #000000
+}
+
+.shape {
+    position: absolute;
+    opacity: 80%;
+}
+
+#circle {
+    background-color: purple;
+    border-radius: 50%;
+}
+
+#rectangle {
+    background-color: green;
+}
+
+#square {
+    background-color: red;
+}
+
+#shapeInfo {
+    background-color: #fdb1b8;
+    box-shadow: -4px 5px 8px -3px #000000;
+    margin-right: 15px;
+    max-height: 300px;
+    width: 100px;
+}

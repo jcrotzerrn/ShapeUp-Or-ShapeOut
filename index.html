@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shape Up or Shape Out!</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com"> -->
+    <link href="https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="container">
+
+        <h1>Shape Up Or Shape Out</h1>
+
+        <section>
+            <article class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <button class="btn btn-outline-secondary" id="rectangle-btn" type="button">Add Rectangle</button>
+                </div>
+                <input type="text" class="form-control" id="width-px" placeholder="width px" aria-label="" aria-describedby="basic-addon1">
+                <input type="text" class="form-control" id="rect-height-px" placeholder="height px" aria-label="" aria-describedby="basic-addon1">
+            </article>
+
+            <article class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <button class="btn btn-outline-secondary" id="square-btn" type="button">Add Square</button>
+                </div>
+                <input type="text" class="form-control" id="side-px" placeholder="side length px" aria-label=""
+                  aria-describedby="basic-addon1">
+              </article>
+                        
+            <article class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <button class="btn btn-outline-secondary" id="circle-btn" type="button">Add Circle</button>
+                </div>
+                <input type="text" class="form-control" id="radius-px" placeholder="radius px" aria-label="" aria-describedby="basic-addon1">
+            </article>
+
+            <article class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <button class="btn btn-outline-secondary" id="triangle-btn" type="button">Add Triangle</button>
+                </div>
+                <input type="text" class="form-control" id="triangle-height" placeholder="height px" aria-label="" aria-describedby="basic-addon1">
+            </article>
+        </section>
+
+        <section class="row" id="output">
+            <article class="col" id="shapeBoard"> </article>
+
+            <article class="col mt-3" id="shapeInfo">
+                <div class="input-group input-group-sm mb-3 mt-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="inputGroup-sizing-sm">Shape</span>
+                    </div>
+                    <input type="text" class="form-control description" id="describe-shape" placeholder="N/A" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
+                </div>
+
+                <div class="input-group input-group-sm mb-3 mt-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="inputGroup-sizing-sm">Height</span>
+                    </div>
+                    <input type="text" class="form-control description" id="describe-height" placeholder="N/A" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
+                </div>
+
+                <div class="input-group input-group-sm mb-3 mt-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="inputGroup-sizing-sm">Width</span>
+                    </div>
+                    <input type="text" class="form-control description" id="describe-width" placeholder="N/A" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
+                </div>
+
+                <div class="input-group input-group-sm mb-3 mt-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="inputGroup-sizing-sm">Area</span>
+                    </div>
+                    <input type="text" class="form-control description" id="describe-area" placeholder="N/A" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
+                </div>
+
+                <div class="input-group input-group-sm-mb-3 mt-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="inputGroup-sizing-sm">Radius</span>
+                    </div>
+                    <input type="text" class="form-control description" id="describe-radius" placeholder="N/A" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
+                </div>
+
+                <div class="input-group input-group-sm-mb-3 mt-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="inputGroup-sizing-sm">Perimeter</span>
+                    </div>
+                    <input type="text" class="form-control description" id="describe-perimeter" placeholder="N/A" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
+                </div>
+            </article>
+        </section>
+    </main>
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+</body>
+</html>
